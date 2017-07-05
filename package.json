@@ -15,7 +15,7 @@
         "webpack": "webpack",
         "build": "cross-env NODE_ENV=production webpack",
         "lint": "eslint main lib",
-        "test": "jest --testResultsProcessor jest-bamboo-formatter",
+        "test": "jest",
         "test-watch": "jest --watch",
         "test-e2e": "xvfb-maybe jest --runInBand --config test/setup/jest-e2e.json",
         "clean": "npm install rimraf && npm run clean-build && npm run clean-release && npm run clean-modules",
