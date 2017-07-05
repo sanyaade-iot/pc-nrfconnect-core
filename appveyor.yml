@@ -1,0 +1,26 @@
+environment:
+  matrix:
+    - platform: x86
+
+image: Visual Studio 2015
+
+install:
+  - ps: Install-Product node 6 x86
+  - set CI=true
+  - npm config set cmake_CMAKE_GENERATOR:INTERNAL="Visual Studio 14 2015"
+  - npm config set cmake_BOOST_ROOT=C:\Libraries\boost_1_63_0
+  - npm install
+
+build: off
+
+shallow_clone: true
+
+test_script:
+  - node --version
+  - npm --version
+  - npm run build
+  - npm test
+  - npm run test-e2e
+
+on_success:
+  - npm run electron-builder
