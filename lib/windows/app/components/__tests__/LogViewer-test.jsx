@@ -55,12 +55,12 @@ describe('LogViewer', () => {
             {
                 id: 1,
                 level: 'info',
-                time: new Date('2017-02-03T12:41:36.020Z'),
+                time: new Date(2017, 1, 3, 13, 41, 36, 20),
                 message: 'Info message',
             }, {
                 id: 2,
                 level: 'error',
-                time: new Date('2017-02-03T13:41:36.020Z'),
+                time: new Date(2017, 1, 3, 14, 41, 36, 20),
                 message: 'Error message',
             },
         ]);
