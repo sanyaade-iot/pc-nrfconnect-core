@@ -1,6 +1,6 @@
 {
     "name": "nrfconnect",
-    "version": "2.3.0-alpha.0",
+    "version": "2.3.0-special.0",
     "description": "nRF Connect for PC",
     "repository": {
         "type": "git",
@@ -24,7 +24,7 @@
         "clean-build": "rimraf dist && rimraf build/nrfjprog",
         "clean-release": "rimraf release",
         "clean-modules": "rimraf \"node_modules/!(rimraf|.bin)\"",
-        "get-nrfjprog": "node build/get-nrfjprog.js",
+        "get-nrfjprog": "echo skipping node build/get-nrfjprog.js",
         "pack": "npm run build && build -p never",
         "release": "build -p always"
     },
