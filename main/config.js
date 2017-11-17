@@ -101,8 +101,8 @@ function init(argv) {
     settingsJsonPath = argv['settings-json-path'] || path.join(userDataDir, 'settings.json');
     appsJsonUrl = 'https://raw.githubusercontent.com/NordicSemiconductor/pc-nrfconnect-core/master/apps.json';
     registryUrl = 'https://registry.yarnpkg.com';
-    skipUpdateApps = argv['skip-update-apps'] || false;
-    skipUpdateCore = argv['skip-update-core'] || false;
+    skipUpdateApps = argv['skip-update-apps'] || true;
+    skipUpdateCore = argv['skip-update-core'] || true;
     skipSplashScreen = argv['skip-splash-screen'] || false;
     officialAppName = argv['open-official-app'] || null;
     localAppName = argv['open-local-app'] || null;
