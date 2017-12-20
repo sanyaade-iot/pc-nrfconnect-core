@@ -38,6 +38,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Logo from '../../../components/Logo';
 import SerialPortSelectorContainer from '../containers/SerialPortSelectorContainer';
+import UsbDeviceSelectorContainer from '../containers/UsbDeviceSelectorContainer';
 import NavMenuContainer from '../containers/NavMenuContainer';
 import MainMenuContainer from '../containers/MainMenuContainer';
 import { decorate } from '../../../util/apps';
@@ -52,6 +53,7 @@ const NavBar = ({
         <MainMenuContainer />
         <div className={navSectionCssClass}>
             <SerialPortSelectorContainer />
+            <UsbDeviceSelectorContainer />
         </div>
         <NavMenuContainer />
         <DecoratedLogo />
